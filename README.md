@@ -46,7 +46,7 @@ The purpose of this analysis is to utilize machine learning models to predict cr
 After reviewing the array of machine learning models used to analyze credit risk data, it would appear the Easy Ensemble Classifier provides the best results. That being said, we must keep in mind the disparity in data set size.
 
 | Risk Category  | Total Set   | Sample Size
-|-----   |:-----   |:
+|-----   |:-----   :| -----:
 | High Risk   |  347   |  101
 | Low Risk    |68470   |17204
 
