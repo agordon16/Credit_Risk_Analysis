@@ -31,13 +31,13 @@ The purpose of this analysis is to utilize machine learning models to predict cr
 
 ### Classifier Models
 * Balanced Random Forest
-    Our first classifier model returns a balanced accuracy score of 78.78%, an overall precision score of .99, and overall recall score of .91. An F1 score of .95 makes this a much better predictive model than the resampling models shown previously.
+    Our first classifier model returns a balanced accuracy score of 78.78%, an overall precision score of .99, and overall recall score of .91. An F1 score of .95 appears to make this a much better predictive model than the resampling models shown previously, however, again the majority lies with low risk and may skew the data.
 
     ![BalRan](https://github.com/agordon16/Credit_Risk_Analysis/blob/1a28b2d4601ec5688415d03c7cc19b118d45940f/Images/BalancedRandomForest.jpg)
 
 
 * Easy Ensemble Classifier
-    This classifier model returns a balanced accuracy score of 92.54%, an overall precision score of .99, and overall recall score of .94. With an overall F1 score of .97, this appears to be the best of our tested models. 
+    This classifier model returns a balanced accuracy score of 92.54%, an overall precision score of .99, and overall recall score of .94. With an overall F1 score of .97, this appears to be the best of our tested models as the F1 scores are a bit more balanced(although still favoring low risk applicants). 
 
     ![EEC](https://github.com/agordon16/Credit_Risk_Analysis/blob/1a28b2d4601ec5688415d03c7cc19b118d45940f/Images/EasyEnsembleClassifier.jpg)
     
