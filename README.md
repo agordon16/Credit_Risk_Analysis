@@ -6,13 +6,13 @@ The purpose of this analysis is to utilize machine learning models to predict cr
 ## Results
 ### Resampling Models
 * Naive Random Oversampling
-    This oversampling model produced a balanced accuracy score of 65.73%. This model also returned an overall precision score of .99, which seems to indicate an excellent predictive response rate. With an overall recall score of .60, this tends to lean towards a lower confidence in the accuracy of our data. Our F1 score in this model falls at .75 which is a decent score.  The lower recall score aligns with our accuracy score to indicate that, while this model **may** be effective, our client would like benefit from running their data through several different models.
+    This oversampling model produced an avg balanced accuracy score of 65.73%. This model also returned an overall precision score of .99, which *seems* to indicate an excellent predictive response rate however, this is primarily due to . With an overall recall score of .60, this tends to lean towards a lower confidence in the accuracy of our data. Our overall F1 score in this model falls at .75 which appears to be a decent score but because the majority of this is for low risk, it does not fare well for the high risk applicants.  The lower recall score aligns with our accuracy score to indicate that, while this model **may** be effective, our client would likely benefit from running their data through several different models.
 
     ![NRO](https://github.com/agordon16/Credit_Risk_Analysis/blob/1a28b2d4601ec5688415d03c7cc19b118d45940f/Images/NaiveRamdonOversamplingjpg.jpg) 
 
 
 * SMOTE Oversampling
-    This model produced a balanced accuracy score of 66.22%, overall precision score of .99, and overall recall score of .69. An overall F1 score of .81 indicates a better model than our previous Naive Random Oversampling model. However, with a balanced accuracy score close to the previous model, we should continue to run the data through more models.
+    This model produced a balanced accuracy score of 66.22%, overall precision score of .99, and overall recall score of .69. An overall F1 score of .81 indicates a better model than our previous Naive Random Oversampling model, but again, the  majority falls to low risk and thus this could skew the avg. However, with a balanced accuracy score close to the previous model, we should continue to run the data through more models.
 
     ![SMOTE](https://github.com/agordon16/Credit_Risk_Analysis/blob/1a28b2d4601ec5688415d03c7cc19b118d45940f/Images/SMOTE%20Oversamplingjpg.jpg)
 
@@ -43,9 +43,9 @@ The purpose of this analysis is to utilize machine learning models to predict cr
     
 
 ## Summary
-After reviewing the array of machine learning models used to analyze credit risk data, it would appear the Easy Ensemble Classifier provides the best results. That being said, we must keep in mind the disparity in data set size. This disparity leads to the idea that more research for a better model is warranted.
+After reviewing the array of machine learning models used to analyze credit risk data, it would appear the Easy Ensemble Classifier provides the best results. While all precision scores tended to lean towards an average of .99, this was mainly due to the larger low risk score which brings the averge up substantially. That being said, we must keep in mind the disparity in data set size. This disparity leads to the idea that more research for a better model is warranted.
 
-| Risk Category  | Total Set   | Sample Size Resampling | Sample Size Ensemble |
+| Risk Category  | Total Set   |  Resampling |  Ensemble |
 |:--- |:--- |:--- |:--- |
 | High Risk   |  347   |  101 | 87 |
 | Low Risk    |68470   |17204 |17118 |
